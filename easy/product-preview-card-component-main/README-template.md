@@ -36,7 +36,8 @@ Mobile view of website
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Pravin-hub-rgb/frontend-practise/tree/master/easy/product-preview-card-component-main)
+- Live Site URL: [Add live site URL here](https://pravin-hub-rgb.github.io/frontend-practise/easy/product-preview-card-component-main/index.html)
 
 ### Built with
 
