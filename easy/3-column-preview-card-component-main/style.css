@@ -1,0 +1,103 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h2,
+button {
+    color: hsl(0, 0%, 95%);
+
+}
+
+button {
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.705);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Fraunces', serif;
+    line-height: 2.5 ;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container>div {
+    width: 375px;
+    margin: auto;
+    padding: 20px;
+}
+
+#one {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+#one button {
+    color: hsl(31, 77%, 52%);
+}
+
+#two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#two button {
+    color: hsl(184, 100%, 22%);
+}
+
+#three {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+#three button {
+    color: hsl(179, 100%, 13%);
+
+}
+
+/* For desktop */
+@media (min-width:1440px) {
+    .container {
+        width: 1040px;
+        margin: 200px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid red;
+    }
+    .container>div {
+        margin: 0;
+        box-sizing: content-box;
+        padding: 20px 40px;
+        /* height: 400px;    */
+    }
+    #one{
+        border-radius: 10px 0 0 10px;
+    }
+    #three{
+        border-radius: 0 10px 10px 0;
+    }
+    h2{
+        margin: 30px 0;
+    }
+    p{
+        margin: 50px 0 ;
+    }
+    button{
+        margin: 50px auto;
+    }
+}

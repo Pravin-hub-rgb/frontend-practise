@@ -1,0 +1,60 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+body{
+
+    background-color: hsl(217, 54%, 11%);
+}
+.box {
+    background-color: hsl(216, 50%, 16%);
+    width: 375px;
+    margin: 100px auto;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.img {
+    display: inline;
+    width: 100%;
+    border-radius: 10px;
+}
+h2{
+    color: white;
+}
+p{
+    font-size: 18px;
+}
+.avatar{
+    height: 40px;
+    display: block;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.icons{
+height: 22px;
+}
+.sb{
+    color:hsl(215, 51%, 70%);
+}
+.cyan{
+    color: hsl(178, 100%, 50%);
+}
+.white{
+    color: white;
+}
+.parallel{
+    display: flex;
+    justify-content: space-between;
+}
+.paraleft{
+    display: flex;
+    align-items: center;
+}
+.hov:hover{
+    cursor: pointer;
+}
