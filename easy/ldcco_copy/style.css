@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    background: url(./images/bg_1.dd73060a.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    /* height: 300px; */
+    display: inline-block;
+}
+
+.login h2 {
+    text-align: center;
+    margin-top: 28%;
+    font-family: 微软雅黑, 宋体, arial;
+}
+
+.cell {
+    display: flex;
+    border: 1px solid rgb(234, 233, 233);
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    padding: 8px;
+}
+
+.cell div {
+    padding: 3px 4px;
+}
+
+.cell label {
+    font-size: 20px;
+}
+
+.cell img {
+    height: 25px;
+}
+
+.cell input {
+
+    border: none;
+    outline: none;
+    width: 230px;
+}
+
+.fcell,
+.scell {
+    width: 10%;
+}
+
+.tcell {
+    width: 90%;
+}
+
+.v-code-cell img {
+    height: 35px;
+}
+
+.login button {
+    background-color: #e10202;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+.two-half{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 20px;
+}
+.td{
+    text-decoration: none;
+}
+.two-half a{
+    color: #e10202;
+    text-decoration: none;
+}

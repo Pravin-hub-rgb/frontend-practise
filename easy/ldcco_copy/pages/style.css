@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* background: url('../images/main-back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: url(../images/main-back.png) no-repeat left top/100% auto;
+    max-width: 554px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding: 10px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: white;
+    font-family: 微软雅黑, 宋体, arial;
+    font-size: 23px;
+    /* border: 1px solid black; */
+}
+
+.left-side img {
+    height: 60px;
+}
+
+.left-side p {
+    padding: 0 5px;
+}
+
+.right-side {
+    width: 30%;
+    text-align: right;
+    /* border: 1px solid black; */
+}
+
+.right-side img {
+    height: 30px;
+}
+
+/* Slider  */
+.slider {
+    width: 90%;
+    height: 300px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+.slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slide-1:target~.image-container {
+    left: 0px;
+}
+
+#slide-2:target~.image-container {
+    left: -500px;
+}
+
+#slide-3:target~.image-container {
+    left: -1000px;
+}
+
+.buttons {
+    position: relative;
+    top: -20px;
+}
+
+.buttons a {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: rgb(131, 129, 129);
+}
+
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+}
+
+.services div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services img {
+    height: 70px;
+}
+
+.services a {
+    text-decoration: none;
+}
+
+.services p {
+
+    padding: 10px 0;
+}
+
+/* Notice */
+.notice{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.fpiece{
+    padding:5px;
+}
+.fpiece img{
+    height: 20px;
+}
+.notice-bar {
+    animation: movingtitle 10s infinite linear;
+    /* added */
+    white-space:nowrap;
+    overflow:hidden;
+}
+@keyframes movingtitle
+{
+/* modified */
+    to {text-indent:-100%;}
+}
+
+
+/* video  */
+.video{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.video video{
+    width: 100%;
+}
+
+/* about us  */
+.aboutus{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.f-div{
+    background-image: url(../images/farm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.s-div{
+    padding: 10px;
+}
+.aboutus div img{
+width: 100px;
+}
+.t-big{
+    font-size: 25px;
+}
