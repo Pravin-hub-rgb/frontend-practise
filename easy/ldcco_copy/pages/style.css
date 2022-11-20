@@ -3,11 +3,12 @@
     padding: 0;
 }
 
+body {
+    font-family: 微软雅黑, 宋体, arial;
+    color: #333;
+}
+
 .container {
-    /* background: url('../images/main-back.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     background: url(../images/main-back.png) no-repeat left top/100% auto;
     max-width: 554px;
     margin: auto;
@@ -117,6 +118,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .services img {
@@ -133,60 +135,172 @@ header {
 }
 
 /* Notice */
-.notice{
+.notice {
     margin-top: 50px;
     display: flex;
     align-items: center;
 }
-.fpiece{
-    padding:5px;
+
+.fpiece {
+    padding: 5px;
 }
-.fpiece img{
+
+.fpiece img {
     height: 20px;
 }
+
 .notice-bar {
     animation: movingtitle 10s infinite linear;
     /* added */
-    white-space:nowrap;
-    overflow:hidden;
+    white-space: nowrap;
+    overflow: hidden;
 }
-@keyframes movingtitle
-{
-/* modified */
-    to {text-indent:-100%;}
+
+@keyframes movingtitle {
+
+    /* modified */
+    to {
+        text-indent: -100%;
+    }
 }
 
 
 /* video  */
-.video{
+.video {
     width: 90%;
     margin: auto;
     margin-top: 40px;
 }
-.video video{
+
+.video video {
     width: 100%;
 }
 
 /* about us  */
-.aboutus{
+.aboutus {
     width: 90%;
     margin: auto;
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.f-div{
+
+.f-div {
     background-image: url(../images/farm.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.s-div{
+
+.s-div {
     padding: 10px;
 }
-.aboutus div img{
-width: 100px;
+
+.aboutus div img {
+    width: 100px;
 }
-.t-big{
+
+.t-big {
     font-size: 25px;
+}
+
+/* news */
+.news {
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.news .line {
+    height: 1px;
+    background: #5c5c5c;
+    display: block;
+    position: absolute;
+    width: 42%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: .6rem;
+}
+
+.news p {
+    display: inline-block;
+    position: relative;
+    background: #f7f7f7;
+    z-index: 2;
+    padding: 0 .5rem;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 0 1rem;
+}
+
+.box>a {
+    width: 48%;
+    display: block;
+    margin: 0 2% .3rem 0;
+    text-decoration: none;
+}
+
+.news .box p {
+    width: 99%;
+    color: #ababab;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: .8rem 0 .5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* bottom navbar */
+.b-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    max-width: 640px;
+    margin: 0 auto;
+    right: 0;
+    height: 4.2rem;
+    box-shadow: 0 0 1px #f8f8f8;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.b-nav>div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.b-nav img {
+    height: 33px;
+}
+
+.b-nav p {
+    font-size: 13px;
+    color: rgb(171, 171, 171);
+    line-height: 0.6;
+    padding: 5px 0 0;
+}
+
+.b-nav>div:nth-child(1) p {
+    color: rgb(225, 2, 2);
 }
